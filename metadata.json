@@ -1,0 +1,6 @@
+{
+  "name": "Canon & Magisterium RAG Studio",
+  "description": "Production-grade streaming RAG chat interface consuming Supabase Edge Functions with reactive SSE parsing, source filtering, and real-time markdown.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

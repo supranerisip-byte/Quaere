@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-cream: #FAF7F0;
+    --border-warm: #e8dcc6;
+    --ink-dark: #1a1a1a;
+    --ink-text: #2b2117;
+    --gold-spark: #C9A86A;
+  }
+
+  body {
+    font-family: 'Lora', 'Georgia', serif;
+    color: #2b2117;
+    background-color: #FAF7F0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+  }
+
+  /* Headings specification */
+  h1, h2, h3, h4 {
+    font-family: 'Lora', serif;
+    letter-spacing: -0.5px;
+    color: #1a1a1a;
+  }
+
+  code, pre, kbd, samp {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+  }
+}
+
+/* Monumental Engraved Stone-Carve Result Typography */
+.monumental-answers {
+  font-family: 'Lora', 'Georgia', serif;
+  font-size: 15.5px;
+  line-height: 1.5;
+  color: #2b2117;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.08);
+}
+
+.latin-monumental {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.55;
+  color: #2b2117;
+  opacity: 0.9;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.07);
+}
+
+/* Subtle Golden Inscription Glow settling into Carved Inset */
+@keyframes engravedReveal {
+  0% {
+    opacity: 0.2;
+    text-shadow: 0 0 10px rgba(201, 168, 106, 0.9), 0 0 18px rgba(201, 168, 106, 0.6);
+    filter: drop-shadow(0 0 6px rgba(201, 168, 106, 0.4));
+  }
+  50% {
+    opacity: 0.85;
+    text-shadow: 0 0 5px rgba(201, 168, 106, 0.5), 0 1px 0 rgba(0, 0, 0, 0.08);
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.08);
+    filter: drop-shadow(0 0 0 transparent);
+  }
+}
+
+.engraved-token {
+  display: inline;
+  animation: engravedReveal 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Synchronized Scrollbar */
+.sync-scroll::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.sync-scroll::-webkit-scrollbar-track {
+  background: rgba(232, 220, 198, 0.3);
+}
+.sync-scroll::-webkit-scrollbar-thumb {
+  background: rgba(201, 168, 106, 0.5);
+  border-radius: 9999px;
+}
+.sync-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(201, 168, 106, 0.8);
+}
